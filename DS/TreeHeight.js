@@ -10,6 +10,7 @@ class TreeNode {
 
     const leftHeight = this.checkHeight(node.left);
     const rightHeight = this.checkHeight(node.right);
+    console.log(leftHeight, "===", rightHeight);
     return Math.max(leftHeight, rightHeight) + 1;
   }
 }
